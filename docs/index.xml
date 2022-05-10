@@ -8,13 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 10 May 2022 13:39:16 +0200</lastBuildDate><atom:link href="https://farkasr215.github.io/melbournepredicts.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Social Data</title>
+      <title>Melbourne, pedestrians, weather etc.</title>
       <link>https://farkasr215.github.io/melbournepredicts.github.io/posts/social_data/</link>
       <pubDate>Tue, 10 May 2022 13:39:16 +0200</pubDate>
       
       <guid>https://farkasr215.github.io/melbournepredicts.github.io/posts/social_data/</guid>
-      <description>1. Motivation. We have chosen a dataset about Melbourne. It contains two main topics:
- Pedestrians counting devices with locations and hourly counts Microclimate sensors with their measurement times, locations and measuring different weather data like temperature, relative humidity, mass density of particles (smaller than 2.5 and 10 micrometers) in the air and wind speed  This is a great dataset to demonstrate the effect of weather on people and through that, bring the reader a bit closer to the confusing and abstract topic climate change.</description>
+      <description>Do you think that climate change won&#39;t affect you?Have you ever wondered about what factors influence that how many people are on the streets? Can climate change affect that?
+Do you hate crowds or just want to take a nice a picture for your instagram without random people&amp;rsquo;s photobomb?
+Or the exact opposite, do you want to meet new people? 
+If your answer is yes to at least one question, than the following article is for you!</description>
     </item>
     
   </channel>
