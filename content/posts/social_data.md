@@ -74,8 +74,9 @@ This section has 3 subsections, as we chose multiple approaches to analyze the d
 We would like to see wether there is some kind of pattern in a year for both the weather parameters and the number of pedestrians. Below you can find a plot with of the **wind speed**, **temperate** and **relative humidity**. Based on this we find that these three have a little correlation, especially **temperature** and **relative humidity**. This finding is not surprising, and **relative humidity** is based on the **temperature**. **Winds** are rather consistent throughout the year in Melbourne. The city being located by a seashore this is not surprising.
 
 After resampling and averaging the **number of pedestrians**, we can observe a little correlation with the **temperature**. Taking a deeper look, we can see that jumps happen during the periods where people generally tend to have freetime, so we can assume that they choose to have their breaks from work when the weather is good.
-    
-![png](asdasd_files/asdasd_38_0.png)
+
+
+<embed type="text/html" src="C:\Users\Réka\Social Data\Final Project\Website\melbournepredicts.github.io\content\posts\boxplot.html">
     
 
 ## B. Preparing dataframe for ML
@@ -83,16 +84,6 @@ After resampling and averaging the **number of pedestrians**, we can observe a l
 Machine learning algorithms are very sensitive for the input data. If the data is not in a proper format, the output is going to be garbage. After separating the different microclimate sensors, we have re-merged them into one big DataFrame, that provided us the basis of our machine learning. First, we made a correlation analysis, the results of which you can find below. We saw that the fields that correlate most with the **number of pedestrians** are **temperature** and **relative humidity**. 
 
 Unfortunately not all sensors were available for multiple years, for example the pedestrian counters only provided us data for a couple of months, so we can not find any correlation between the **month** and the **number of pedestrians**.
-
-
-
-
-    Index(['cluster', 'datetime', 'wind_speed', 'temperature', 'relhumidity',
-           'psize10', 'psize25', 'Hourly_Counts', 'Year', 'Month', 'Weekday'],
-          dtype='object')
-
-
-
 
     
 ![png](asdasd_files/asdasd_46_0.png)
@@ -112,7 +103,7 @@ There are a number of uses we can find for future predictions of the number of p
 
 
     
-![png](asdasd_files/asdasd_50_1.png)
+![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_50_1.png)
     
 
 
@@ -121,7 +112,7 @@ There are a number of uses we can find for future predictions of the number of p
 
 
     
-![png](asdasd_files/asdasd_51_1.png)
+![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_51_1.png)
     
 
 
@@ -134,7 +125,7 @@ There are a number of uses we can find for future predictions of the number of p
 
 
     
-![png](asdasd_files/asdasd_54_1.png)
+![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_54_1.png)
     
 
 
@@ -143,7 +134,7 @@ There are a number of uses we can find for future predictions of the number of p
 
 
     
-![png](asdasd_files/asdasd_55_1.png)
+![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_55_1.png)
     
 
 
@@ -154,7 +145,7 @@ There are a number of uses we can find for future predictions of the number of p
 
 
     
-![png](asdasd_files/asdasd_58_1.png)
+![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_58_1.png)
     
 
 
@@ -167,7 +158,7 @@ There are a number of uses we can find for future predictions of the number of p
 
 
     
-![png](asdasd_files/asdasd_61_1.png)
+![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_61_1.png)
     
 
 
