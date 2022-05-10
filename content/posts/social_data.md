@@ -5,10 +5,6 @@ date: 2022-05-10T13:39:16+02:00
 
 # 1. Motivation.
 
-* *What is your dataset?*
-* *Why did you choose this/these particular dataset(s)?*
-* *What was your goal for the end user's experience?*
-
 We have chosen a dataset about Melbourne. It contains two main topics: 
 1. Pedestrians counting devices with locations and hourly counts 
 2. Microclimate sensors with their measurement times, locations and measuring different weather data like temperature, relative humidity, mass density of particles (smaller than 2.5 and 10 micrometers) in the air and wind speed
