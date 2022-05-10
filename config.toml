@@ -1,7 +1,7 @@
 baseURL = 'https://farkasr215.github.io/melbournepredicts.github.io/'
 languageCode = 'en-us'
 title = 'Social Data Analysis and Visualization'
-theme = "ananke"
+theme = "eureka"
 publishDir = 'docs'
 [markup]
   [markup.goldmark]
