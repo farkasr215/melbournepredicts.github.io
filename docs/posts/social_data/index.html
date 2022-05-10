@@ -48,7 +48,7 @@ Do you hate crowds or just want to take a nice a picture for your instagram with
 Or the exact opposite, do you want to meet new people? 
 If your answer is yes to at least one question, than the following article is for you!"><meta itemprop="datePublished" content="2022-05-10T13:39:16+02:00" />
 <meta itemprop="dateModified" content="2022-05-10T13:39:16+02:00" />
-<meta itemprop="wordCount" content="1788">
+<meta itemprop="wordCount" content="1766">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Melbourne, pedestrians, weather etc."/>
 <meta name="twitter:description" content="Do you think that climate change won&#39;t affect you?Have you ever wondered about what factors influence that how many people are on the streets? Can climate change affect that?
@@ -132,13 +132,13 @@ If your answer is yes to at least one question, than the following article is fo
 <p>Do you hate crowds or just want to take a nice a picture for your instagram without random people&rsquo;s photobomb?</p>
 <p>Or the exact opposite, do you want to meet new people? </center></p>
 <p>If your answer is yes to at least one question, than the following article is for you!</p>
-<h1 id="our-motivation">Our Motivation.</h1>
+<h1 id="our-motivation">Our Motivation</h1>
 <center><em>"A question isn't answered<br>
 If an answer isn't questioned<br>
 An answer has a meaning<br>
 When new meaning has a truth" <br>
 Temples</em></center>
-<p>We would to demonstrate the effect of weather on people and through that, bring You a bit closer to the confusing and abstract topic climate change. We believe, if people start realizing, that climate change is already happening and it affects everyone including them, we hope they will start to actually do something against it.</p>
+<p>We would to demonstrate the effect of weather on people and through that, bring You a bit closer to the confusing and abstract topic climate change. If people start realizing, that climate change is already happening and it affects everyone including them, we hope they will start to actually do something against it.</p>
 <p>For our project, we have chosen a dataset about Melbourne. It contains two main topics:</p>
 <ol>
 <li>Pedestrians counting devices with locations and hourly counts</li>
@@ -159,7 +159,7 @@ Temples</em></center>
 <p>Below you can find an the average steps pedestrians took in each location after 2019. Thanks to this we know which sites were to most popular and which were the least crowded ones. This can give us a hint on what to expect when predicting for the number of pedestrians. We can see that the top performer was a temporary sensor. Checking the name and comparing it to others, we can see that the sensors are generally located in tram stops. Based on these findings we can already see which areas are the most crowded, so the city might want to increase or decrease the amount of trams going on these lines.</p>
 <p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/basics1.png" alt="png">
 <img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/basics2.png" alt="png"></p>
-<h1 id="analysis-and-ml">Analysis and ML</h1>
+<h1 id="social-data-analysis--visualization-machine-learning">Social data analysis &amp; visualization, Machine Learning</h1>
 <h2 id="a-seasonality-analysis">A. Seasonality analysis</h2>
 <p>We would like to see wether there is some kind of pattern in a year for both the weather parameters and the number of pedestrians. Below you can find a boxplot with of the <strong>wind speed</strong>, <strong>temperate</strong> and <strong>relative humidity</strong>. By clicking on the different tabs and going on to the boxes, you can see the minimum, maximum, median and first &amp; third quartiles for each month. Based on this we find that these three have a little correlation, especially <strong>temperature</strong> and <strong>relative humidity</strong>. This finding is not surprising, and <strong>relative humidity</strong> is dependent on the <strong>temperature</strong>. <strong>Winds</strong> are rather consistent throughout the year in Melbourne. The city being located by a seashore this is not surprising. By clicking on the tabs below, you can take a look at this by yourself!</p>
 <div>
@@ -197,42 +197,30 @@ Temples</em></center>
 <p><u><strong>Random Forest with binning:</strong></u> Moving to the random forest, we saw that binning has worsened our results to 72.41%.</p>
 <p>The overall conclusion is that binning does not help in our case for predictions, but as we are seeing good results, we would recommend using a system like this in the named cases.</p>
 <p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_50_1.png" alt="png"></p>
-<pre><code>R^2 for Random Forest: 0.735370
-</code></pre>
 <p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_51_1.png" alt="png"></p>
-<pre><code>min: 0.0
-max: 2716.1428571428573
-
-
-R^2 for Logistic Regression: 0.488391
-</code></pre>
 <p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_54_1.png" alt="png"></p>
-<pre><code>R^2 for Random Forest: 0.724060
-</code></pre>
 <p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_55_1.png" alt="png"></p>
 <h3 id="ii-predicting-the-concentration-of-particles-in-the-air">ii. Predicting the concentration of particles in the air</h3>
 <p>Moving on, we would like to predict the quality of air based on given parameters. Wince we didn&rsquo;t succeed with linear regression before, we are only trying with random forest in this case. Quality of air predictions could be useful for weather reports especially for people who have respiratory problems. People could also check these results and compare them to how they are feeling on a given day, to learn more about their health.</p>
 <p><u><strong>Random Forest:</strong></u> Resulting in an error of 38.75%, this is not very reliable, so let&rsquo;s see if binning helps.</p>
 <p><u><strong>Random Forest with binning:</strong></u> As we have received 37.07%, we can conclude that binning does not help in this case either.</p>
-<p>Neither of the two were very reliable, so this technology is still te be improved.</p>
+<p>Neither of the two were very reliable, so this technology is still to be improved.</p>
 <p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_58_1.png" alt="png"></p>
-<pre><code>min: 0.0
-max: 1089.34
-
-R^2 for Random Forest: 0.370746
-</code></pre>
 <p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_61_1.png" alt="png"></p>
 <h1 id="summary">Summary</h1>
-<p>In the we would like to shortly discuss the overall results. If you got to this point, you must be interested in our project! Therefore, we would like to thank you for your time that you invested in this article!</p>
+<p>In the end, we would like to shortly discuss the overall results. If you got to this point, you must be interested in our project! Therefore, we would like to thank you for your time that you invested in this article!</p>
 <h2 id="assessment">Assessment</h2>
 <p>Overall we can say that the project was a great success. We have learned a lot both in technological terms and in ways of thinking like an engineer. We can say our choice of data was good, and we have achieved our goals.</p>
 <h2 id="improvements">Improvements</h2>
 <p>If we got a second shot at the project, we would try to optimize our data processing, to require less resources. We are confident that we chose a good solution for this, however, in data science you can always shoot higher, because new methods are invented every single day.</p>
-<p>Since we were unsuccesful in predicting the quality of air, we came to the conclusion that it is based on factors outside these dataset, such as the number of cars, acts of god(s), and others not recorded by the microclimate sensors.</p>
+<p>Since we were unsuccesful in predicting the quality of air, we came to the conclusion that it is based on factors outside these dataset, such as the number of cars, act of God, and others not recorded by the microclimate sensors.</p>
 <p>We believe that if a dataset existed on the number of cars and for example traffic lights, we could have much better predictions and we would have been successful with those as well.</p>
 <h1 id="link-to-explainer-notebook">Link to explainer notebook</h1>
 <h1 id="references">References</h1>
-<p>[1] <a href="https://data.melbourne.vic.gov.au/">https://data.melbourne.vic.gov.au/</a></p>
+<p>[1] <a href="https://data.melbourne.vic.gov.au/Transport/Pedestrian-Counting-System-Sensor-Locations/h57g-5234">https://data.melbourne.vic.gov.au/Transport/Pedestrian-Counting-System-Sensor-Locations/h57g-5234</a><br>
+<a href="https://data.melbourne.vic.gov.au/Transport/Pedestrian-Counting-System-Monthly-counts-per-hour/b2ak-trbp?src=featured_banner">https://data.melbourne.vic.gov.au/Transport/Pedestrian-Counting-System-Monthly-counts-per-hour/b2ak-trbp?src=featured_banner</a><br>
+<a href="https://data.melbourne.vic.gov.au/Environment/Microclimate-Sensor-Locations/irqv-hjr4">https://data.melbourne.vic.gov.au/Environment/Microclimate-Sensor-Locations/irqv-hjr4</a><br>
+<a href="https://data.melbourne.vic.gov.au/Environment/Microclimate-Sensor-Readings/u4vh-84j8?src=featured_banner">https://data.melbourne.vic.gov.au/Environment/Microclimate-Sensor-Readings/u4vh-84j8?src=featured_banner</a><br></p>
 <ul class="pa0">
   
 </ul>

@@ -13,7 +13,7 @@ Or the exact opposite, do you want to meet new people? </center>
 
 If your answer is yes to at least one question, than the following article is for you!
 
-# Our Motivation.
+# Our Motivation
 
 <center><em>"A question isn't answered<br>
 If an answer isn't questioned<br>
@@ -21,7 +21,7 @@ An answer has a meaning<br>
 When new meaning has a truth" <br>
 Temples</em></center>
 
-We would to demonstrate the effect of weather on people and through that, bring You a bit closer to the confusing and abstract topic climate change. We believe, if people start realizing, that climate change is already happening and it affects everyone including them, we hope they will start to actually do something against it.
+We would to demonstrate the effect of weather on people and through that, bring You a bit closer to the confusing and abstract topic climate change. If people start realizing, that climate change is already happening and it affects everyone including them, we hope they will start to actually do something against it.
 
 For our project, we have chosen a dataset about Melbourne. It contains two main topics: 
 1. Pedestrians counting devices with locations and hourly counts 
@@ -64,7 +64,7 @@ Below you can find an the average steps pedestrians took in each location after 
 ![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/basics2.png)
 
 
-# Analysis and ML
+# Social data analysis & visualization, Machine Learning
 
 ## A. Seasonality analysis
 
@@ -126,8 +126,7 @@ The overall conclusion is that binning does not help in our case for predictions
     
 
 
-    R^2 for Random Forest: 0.735370
-    
+  
 
 
     
@@ -135,11 +134,7 @@ The overall conclusion is that binning does not help in our case for predictions
     
 
 
-    min: 0.0
-    max: 2716.1428571428573
-    
 
-    R^2 for Logistic Regression: 0.488391
     
 
 
@@ -148,7 +143,7 @@ The overall conclusion is that binning does not help in our case for predictions
     
 
 
-    R^2 for Random Forest: 0.724060
+
 
 
     
@@ -164,7 +159,7 @@ Moving on, we would like to predict the quality of air based on given parameters
 
 <u>**Random Forest with binning:**</u> As we have received 37.07%, we can conclude that binning does not help in this case either.
 
-Neither of the two were very reliable, so this technology is still te be improved.
+Neither of the two were very reliable, so this technology is still to be improved.
     
 
 
@@ -172,18 +167,12 @@ Neither of the two were very reliable, so this technology is still te be improve
 ![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_58_1.png)
     
 
-
-    min: 0.0
-    max: 1089.34
-
-    R^2 for Random Forest: 0.370746
-
     
 ![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_61_1.png)
 
 # Summary
 
-In the we would like to shortly discuss the overall results. If you got to this point, you must be interested in our project! Therefore, we would like to thank you for your time that you invested in this article!
+In the end, we would like to shortly discuss the overall results. If you got to this point, you must be interested in our project! Therefore, we would like to thank you for your time that you invested in this article!
 
 ## Assessment
 
@@ -193,7 +182,7 @@ Overall we can say that the project was a great success. We have learned a lot b
 
 If we got a second shot at the project, we would try to optimize our data processing, to require less resources. We are confident that we chose a good solution for this, however, in data science you can always shoot higher, because new methods are invented every single day.
 
-Since we were unsuccesful in predicting the quality of air, we came to the conclusion that it is based on factors outside these dataset, such as the number of cars, acts of god(s), and others not recorded by the microclimate sensors.
+Since we were unsuccesful in predicting the quality of air, we came to the conclusion that it is based on factors outside these dataset, such as the number of cars, act of God, and others not recorded by the microclimate sensors.
 
 We believe that if a dataset existed on the number of cars and for example traffic lights, we could have much better predictions and we would have been successful with those as well.
 
@@ -201,4 +190,7 @@ We believe that if a dataset existed on the number of cars and for example traff
 
 # References
 
-[1] https://data.melbourne.vic.gov.au/
+[1] https://data.melbourne.vic.gov.au/Transport/Pedestrian-Counting-System-Sensor-Locations/h57g-5234<br>
+https://data.melbourne.vic.gov.au/Transport/Pedestrian-Counting-System-Monthly-counts-per-hour/b2ak-trbp?src=featured_banner<br>
+https://data.melbourne.vic.gov.au/Environment/Microclimate-Sensor-Locations/irqv-hjr4<br>
+https://data.melbourne.vic.gov.au/Environment/Microclimate-Sensor-Readings/u4vh-84j8?src=featured_banner<br>
