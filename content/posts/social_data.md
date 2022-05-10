@@ -59,8 +59,6 @@ Below you can find an the average steps pedestrians took in each location after 
 
 ![png](https://raw.githubusercontent.com/Csumber/melbournepredicts.github.io/main/asdasd_23_1.png)
 
-<img src="https://raw.githubusercontent.com/Csumber/melbournepredicts.github.io/main/asdasd_23_1.png">
-
 
 # 3. Analysis and ML
 
