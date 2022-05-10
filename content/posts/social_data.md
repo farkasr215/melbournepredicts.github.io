@@ -57,7 +57,8 @@ To be able to feed the data to ML algorithms, we needed to process the measureme
 Below you can find an the average steps pedestrians took in each location after 2019. Thanks to this we know which sites were to most popular and which were the least crowded ones. This can give us a hint on what to expect when predicting for the number of pedestrians. We can see that the top performer was a temporary sensor. Checking the name and comparing it to others, we can see that the sensors are generally located in tram stops. Based on these findings we can already see which areas are the most crowded, so the city might want to increase or decrease the amount of trams going on these lines.
 
 
-![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_23_1.png)
+![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/basics1.png)
+![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/basics2.png)
 
 
 # 3. Analysis and ML
