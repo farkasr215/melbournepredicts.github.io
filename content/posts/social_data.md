@@ -78,11 +78,9 @@ After resampling and averaging the **number of pedestrians**, we can observe a l
 Machine learning algorithms are very sensitive for the input data. If the data is not in a proper format, the output is going to be garbage. After separating the different microclimate sensors, we have re-merged them into one big DataFrame, that provided us the basis of our machine learning. First, we made a correlation analysis, the results of which you can find below. We saw that the fields that correlate most with the **number of pedestrians** are **temperature** and **relative humidity**. 
 
 Unfortunately not all sensors were available for multiple years, for example the pedestrian counters only provided us data for a couple of months, so we can not find any correlation between the **month** and the **number of pedestrians**.
-
     
-![png](asdasd_files/asdasd_46_0.png)
+![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_38_0.png)
     
-
 
 ## C. Machine learning
 
@@ -135,7 +133,6 @@ The overall conclusion is that binning does not help in our case for predictions
 
 
     R^2 for Random Forest: 0.724060
-    
 
 
     
@@ -162,16 +159,12 @@ Neither of the two were very reliable, so this technology is still te be improve
 
     min: 0.0
     max: 1089.34
-    
 
     R^2 for Random Forest: 0.370746
-    
-
 
     
 ![png](https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_61_1.png)
     
-
 
 # 4. Genre
 

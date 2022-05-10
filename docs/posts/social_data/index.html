@@ -6,7 +6,7 @@
     
     <title>Social Data | Analysis</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="1. Motivation.  What is your dataset? Why did you choose this/these particular dataset(s)? What was your goal for the end user&rsquo;s experience?  We have chosen a dataset about Melbourne. It contains two main topics:
+    <meta name="description" content="1. Motivation. We have chosen a dataset about Melbourne. It contains two main topics:
  Pedestrians counting devices with locations and hourly counts Microclimate sensors with their measurement times, locations and measuring different weather data like temperature, relative humidity, mass density of particles (smaller than 2.5 and 10 micrometers) in the air and wind speed  This is a great dataset to demonstrate the effect of weather on people and through that, bring the reader a bit closer to the confusing and abstract topic climate change.">
     <meta name="generator" content="Hugo 0.98.0" />
     
@@ -31,7 +31,7 @@
     
     
     <meta property="og:title" content="Social Data" />
-<meta property="og:description" content="1. Motivation.  What is your dataset? Why did you choose this/these particular dataset(s)? What was your goal for the end user&rsquo;s experience?  We have chosen a dataset about Melbourne. It contains two main topics:
+<meta property="og:description" content="1. Motivation. We have chosen a dataset about Melbourne. It contains two main topics:
  Pedestrians counting devices with locations and hourly counts Microclimate sensors with their measurement times, locations and measuring different weather data like temperature, relative humidity, mass density of particles (smaller than 2.5 and 10 micrometers) in the air and wind speed  This is a great dataset to demonstrate the effect of weather on people and through that, bring the reader a bit closer to the confusing and abstract topic climate change." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://farkasr215.github.io/melbournepredicts.github.io/posts/social_data/" /><meta property="article:section" content="posts" />
@@ -39,13 +39,13 @@
 <meta property="article:modified_time" content="2022-05-10T13:39:16+02:00" />
 
 <meta itemprop="name" content="Social Data">
-<meta itemprop="description" content="1. Motivation.  What is your dataset? Why did you choose this/these particular dataset(s)? What was your goal for the end user&rsquo;s experience?  We have chosen a dataset about Melbourne. It contains two main topics:
+<meta itemprop="description" content="1. Motivation. We have chosen a dataset about Melbourne. It contains two main topics:
  Pedestrians counting devices with locations and hourly counts Microclimate sensors with their measurement times, locations and measuring different weather data like temperature, relative humidity, mass density of particles (smaller than 2.5 and 10 micrometers) in the air and wind speed  This is a great dataset to demonstrate the effect of weather on people and through that, bring the reader a bit closer to the confusing and abstract topic climate change."><meta itemprop="datePublished" content="2022-05-10T13:39:16+02:00" />
 <meta itemprop="dateModified" content="2022-05-10T13:39:16+02:00" />
-<meta itemprop="wordCount" content="1585">
+<meta itemprop="wordCount" content="1565">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Social Data"/>
-<meta name="twitter:description" content="1. Motivation.  What is your dataset? Why did you choose this/these particular dataset(s)? What was your goal for the end user&rsquo;s experience?  We have chosen a dataset about Melbourne. It contains two main topics:
+<meta name="twitter:description" content="1. Motivation. We have chosen a dataset about Melbourne. It contains two main topics:
  Pedestrians counting devices with locations and hourly counts Microclimate sensors with their measurement times, locations and measuring different weather data like temperature, relative humidity, mass density of particles (smaller than 2.5 and 10 micrometers) in the air and wind speed  This is a great dataset to demonstrate the effect of weather on people and through that, bring the reader a bit closer to the confusing and abstract topic climate change."/>
 
 	
@@ -120,11 +120,6 @@
       
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="1-motivation">1. Motivation.</h1>
-<ul>
-<li><em>What is your dataset?</em></li>
-<li><em>Why did you choose this/these particular dataset(s)?</em></li>
-<li><em>What was your goal for the end user&rsquo;s experience?</em></li>
-</ul>
 <p>We have chosen a dataset about Melbourne. It contains two main topics:</p>
 <ol>
 <li>Pedestrians counting devices with locations and hourly counts</li>
@@ -171,7 +166,7 @@
 <h2 id="b-preparing-dataframe-for-ml">B. Preparing dataframe for ML</h2>
 <p>Machine learning algorithms are very sensitive for the input data. If the data is not in a proper format, the output is going to be garbage. After separating the different microclimate sensors, we have re-merged them into one big DataFrame, that provided us the basis of our machine learning. First, we made a correlation analysis, the results of which you can find below. We saw that the fields that correlate most with the <strong>number of pedestrians</strong> are <strong>temperature</strong> and <strong>relative humidity</strong>.</p>
 <p>Unfortunately not all sensors were available for multiple years, for example the pedestrian counters only provided us data for a couple of months, so we can not find any correlation between the <strong>month</strong> and the <strong>number of pedestrians</strong>.</p>
-<p><img src="asdasd_files/asdasd_46_0.png" alt="png"></p>
+<p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_38_0.png" alt="png"></p>
 <h2 id="c-machine-learning">C. Machine learning</h2>
 <h3 id="i-predicting-the-number-of-pedestrians">i. Predicting the number of pedestrians</h3>
 <p>There are a number of uses we can find for future predictions of the number of pedestrians. For example the temperatures are in extremely high values, and we want to hand out water bottles for the passerbys, we want to plan roadworks accordingly, transport a person of high security safely without having to lock down multiple roads or having to increase the number of trams passing by for a period. These are all cases predictions would be useful. For prediction, we have decided on multiple approaches:</p>
@@ -209,7 +204,6 @@ R^2 for Logistic Regression: 0.488391
 <p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_58_1.png" alt="png"></p>
 <pre><code>min: 0.0
 max: 1089.34
-
 
 R^2 for Random Forest: 0.370746
 </code></pre>

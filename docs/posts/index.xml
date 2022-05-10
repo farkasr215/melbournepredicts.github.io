@@ -13,7 +13,7 @@
       <pubDate>Tue, 10 May 2022 13:39:16 +0200</pubDate>
       
       <guid>https://farkasr215.github.io/melbournepredicts.github.io/posts/social_data/</guid>
-      <description>1. Motivation.  What is your dataset? Why did you choose this/these particular dataset(s)? What was your goal for the end user&amp;rsquo;s experience?  We have chosen a dataset about Melbourne. It contains two main topics:
+      <description>1. Motivation. We have chosen a dataset about Melbourne. It contains two main topics:
  Pedestrians counting devices with locations and hourly counts Microclimate sensors with their measurement times, locations and measuring different weather data like temperature, relative humidity, mass density of particles (smaller than 2.5 and 10 micrometers) in the air and wind speed  This is a great dataset to demonstrate the effect of weather on people and through that, bring the reader a bit closer to the confusing and abstract topic climate change.</description>
     </item>
     
