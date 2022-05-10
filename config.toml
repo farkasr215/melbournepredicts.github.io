@@ -3,3 +3,7 @@ languageCode = 'en-us'
 title = 'Analysis'
 theme = "ananke"
 publishDir = 'docs'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
