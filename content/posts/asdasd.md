@@ -55,26 +55,8 @@ Below the map with the sensors locations, you can find an animated heatmap, that
 To be able to feed the data to ML algorithms, we needed to process the measurements of the sensors. Our computers were not necessarily the best fit for data processing, so we decided to output the processed data to a csv file, and free up memory.
 
 Below you can find an the average steps pedestrians took in each location after 2019. Thanks to this we know which sites were to most popular and which were the least crowded ones. This can give us a hint on what to expect when predicting for the number of pedestrians. We can see that the top performer was a temporary sensor. Checking the name and comparing it to others, we can see that the sensors are generally located in tram stops. Based on these findings we can already see which areas are the most crowded, so the city might want to increase or decrease the amount of trams going on these lines.
-
-    C:\Users\Ambrus\AppData\Roaming\Python\Python39\site-packages\IPython\core\interactiveshell.py:3340: DtypeWarning: Columns (4,7) have mixed types.Specify dtype option on import or set low_memory=False.
-      exec(code_obj, self.user_global_ns, self.user_ns)
     
-
-    C:\Users\Ambrus\AppData\Roaming\Python\Python39\site-packages\IPython\core\interactiveshell.py:3340: DtypeWarning: Columns (3,4) have mixed types.Specify dtype option on import or set low_memory=False.
-      exec(code_obj, self.user_global_ns, self.user_ns)
-    
-
-
-
-
-    <AxesSubplot:title={'center':'Most popular sites since 2019'}, xlabel='sensor_description', ylabel='Hourly pedestrians'>
-
-
-
-
-    
-![png](asdasd_files/asdasd_23_1.png)
-    
+![png](https://raw.githubusercontent.com/Csumber/melbournepredicts.github.io/main/asdasd_23_1.png)
 
 
 # 3. Analysis and ML
@@ -90,67 +72,6 @@ This section has 3 subsections, as we chose multiple approaches to analyze the d
 We would like to see wether there is some kind of pattern in a year for both the weather parameters and the number of pedestrians. Below you can find a plot with of the **wind speed**, **temperate** and **relative humidity**. Based on this we find that these three have a little correlation, especially **temperature** and **relative humidity**. This finding is not surprising, and **relative humidity** is based on the **temperature**. **Winds** are rather consistent throughout the year in Melbourne. The city being located by a seashore this is not surprising.
 
 After resampling and averaging the **number of pedestrians**, we can observe a little correlation with the **temperature**. Taking a deeper look, we can see that jumps happen during the periods where people generally tend to have freetime, so we can assume that they choose to have their breaks from work when the weather is good.
-
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\2434127797.py:5: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      q1 = groups.quantile(q = 0.25)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\2434127797.py:6: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      q2 = groups.quantile(q = 0.5)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\2434127797.py:7: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      q3 = groups.quantile(q = 0.75)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\2434127797.py:27: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      qmin = groups.quantile(q = 0.00)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\2434127797.py:28: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      qmax = groups.quantile(q = 1.00)
-    
-
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\1479855908.py:3: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      q1 = groups2.quantile(q = 0.25)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\1479855908.py:4: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      q2 = groups2.quantile(q = 0.5)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\1479855908.py:5: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      q3 = groups2.quantile(q = 0.75)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\1479855908.py:26: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      qmin = groups2.quantile(q = 0.00)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\1479855908.py:27: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      qmax = groups2.quantile(q = 1.00)
-    
-
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\787226278.py:3: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      q1 = groups3.quantile(q = 0.25)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\787226278.py:4: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      q2 = groups3.quantile(q = 0.5)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\787226278.py:5: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      q3 = groups3.quantile(q = 0.75)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\787226278.py:35: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      qmin = groups3.quantile(q = 0.00)
-    C:\Users\Ambrus\AppData\Local\Temp\ipykernel_26612\787226278.py:36: FutureWarning: Dropping invalid columns in DataFrameGroupBy.quantile is deprecated. In a future version, a TypeError will be raised. Before calling .quantile, select only columns which should be valid for the function.
-      qmax = groups3.quantile(q = 1.00)
-    
-
-
-
-<div class="bk-root">
-    <a href="https://bokeh.org" target="_blank" class="bk-logo bk-logo-small bk-logo-notebook"></a>
-    <span id="1191">Loading BokehJS ...</span>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<div class="bk-root" id="62cf9616-e84c-4934-a4ec-efb8b0a004d4" data-root-id="1204"></div>
-
-
-
-
-
-
     
 ![png](asdasd_files/asdasd_38_0.png)
     
