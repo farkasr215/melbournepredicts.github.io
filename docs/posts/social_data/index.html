@@ -42,7 +42,7 @@
 <meta itemprop="description" content="1. Motivation.  What is your dataset? Why did you choose this/these particular dataset(s)? What was your goal for the end user&rsquo;s experience?  We have chosen a dataset about Melbourne. It contains two main topics:
  Pedestrians counting devices with locations and hourly counts Microclimate sensors with their measurement times, locations and measuring different weather data like temperature, relative humidity, mass density of particles (smaller than 2.5 and 10 micrometers) in the air and wind speed  This is a great dataset to demonstrate the effect of weather on people and through that, bring the reader a bit closer to the confusing and abstract topic climate change."><meta itemprop="datePublished" content="2022-05-10T13:39:16+02:00" />
 <meta itemprop="dateModified" content="2022-05-10T13:39:16+02:00" />
-<meta itemprop="wordCount" content="1243">
+<meta itemprop="wordCount" content="1231">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Social Data"/>
 <meta name="twitter:description" content="1. Motivation.  What is your dataset? Why did you choose this/these particular dataset(s)? What was your goal for the end user&rsquo;s experience?  We have chosen a dataset about Melbourne. It contains two main topics:
@@ -153,7 +153,8 @@
 <h1 id="b-sensor-data-processing">B. Sensor data processing</h1>
 <p>To be able to feed the data to ML algorithms, we needed to process the measurements of the sensors. Our computers were not necessarily the best fit for data processing, so we decided to output the processed data to a csv file, and free up memory.</p>
 <p>Below you can find an the average steps pedestrians took in each location after 2019. Thanks to this we know which sites were to most popular and which were the least crowded ones. This can give us a hint on what to expect when predicting for the number of pedestrians. We can see that the top performer was a temporary sensor. Checking the name and comparing it to others, we can see that the sensors are generally located in tram stops. Based on these findings we can already see which areas are the most crowded, so the city might want to increase or decrease the amount of trams going on these lines.</p>
-<p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_23_1.png" alt="png"></p>
+<p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/basics1.png" alt="png">
+<img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/basics2.png" alt="png"></p>
 <h1 id="3-analysis-and-ml">3. Analysis and ML</h1>
 <p>This section has 3 subsections, as we chose multiple approaches to analyze the data.</p>
 <ul>
@@ -164,14 +165,10 @@
 <h2 id="a-seasonality-analysis">A. Seasonality analysis</h2>
 <p>We would like to see wether there is some kind of pattern in a year for both the weather parameters and the number of pedestrians. Below you can find a plot with of the <strong>wind speed</strong>, <strong>temperate</strong> and <strong>relative humidity</strong>. Based on this we find that these three have a little correlation, especially <strong>temperature</strong> and <strong>relative humidity</strong>. This finding is not surprising, and <strong>relative humidity</strong> is based on the <strong>temperature</strong>. <strong>Winds</strong> are rather consistent throughout the year in Melbourne. The city being located by a seashore this is not surprising.</p>
 <p>After resampling and averaging the <strong>number of pedestrians</strong>, we can observe a little correlation with the <strong>temperature</strong>. Taking a deeper look, we can see that jumps happen during the periods where people generally tend to have freetime, so we can assume that they choose to have their breaks from work when the weather is good.</p>
-<p><img src="asdasd_files/asdasd_38_0.png" alt="png"></p>
+<embed type="text/html" src="C:\Users\Réka\Social Data\Final Project\Website\melbournepredicts.github.io\content\posts\boxplot.html">
 <h2 id="b-preparing-dataframe-for-ml">B. Preparing dataframe for ML</h2>
 <p>Machine learning algorithms are very sensitive for the input data. If the data is not in a proper format, the output is going to be garbage. After separating the different microclimate sensors, we have re-merged them into one big DataFrame, that provided us the basis of our machine learning. First, we made a correlation analysis, the results of which you can find below. We saw that the fields that correlate most with the <strong>number of pedestrians</strong> are <strong>temperature</strong> and <strong>relative humidity</strong>.</p>
 <p>Unfortunately not all sensors were available for multiple years, for example the pedestrian counters only provided us data for a couple of months, so we can not find any correlation between the <strong>month</strong> and the <strong>number of pedestrians</strong>.</p>
-<pre><code>Index(['cluster', 'datetime', 'wind_speed', 'temperature', 'relhumidity',
-       'psize10', 'psize25', 'Hourly_Counts', 'Year', 'Month', 'Weekday'],
-      dtype='object')
-</code></pre>
 <p><img src="asdasd_files/asdasd_46_0.png" alt="png"></p>
 <h2 id="c-machine-learning">C. Machine learning</h2>
 <h3 id="i-predicting-the-number-of-pedestrians">i. Predicting the number of pedestrians</h3>
@@ -185,31 +182,31 @@
 <p>R^2 for Linear Regression: 0.360752</p>
 </li>
 </ul>
-<p><img src="asdasd_files/asdasd_50_1.png" alt="png"></p>
+<p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_50_1.png" alt="png"></p>
 <pre><code>R^2 for Random Forest: 0.735370
 </code></pre>
-<p><img src="asdasd_files/asdasd_51_1.png" alt="png"></p>
+<p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_51_1.png" alt="png"></p>
 <pre><code>min: 0.0
 max: 2716.1428571428573
 
 
 R^2 for Logistic Regression: 0.488391
 </code></pre>
-<p><img src="asdasd_files/asdasd_54_1.png" alt="png"></p>
+<p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_54_1.png" alt="png"></p>
 <pre><code>R^2 for Random Forest: 0.724060
 </code></pre>
-<p><img src="asdasd_files/asdasd_55_1.png" alt="png"></p>
+<p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_55_1.png" alt="png"></p>
 <h2 id="c-ml-predicting-the-concentration-of-particulars-in-the-air">C. ML: Predicting the concentration of particulars in the air</h2>
 <pre><code>R^2 for Random Forest: 0.387531
 </code></pre>
-<p><img src="asdasd_files/asdasd_58_1.png" alt="png"></p>
+<p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_58_1.png" alt="png"></p>
 <pre><code>min: 0.0
 max: 1089.34
 
 
 R^2 for Random Forest: 0.370746
 </code></pre>
-<p><img src="asdasd_files/asdasd_61_1.png" alt="png"></p>
+<p><img src="https://raw.githubusercontent.com/farkasr215/melbournepredicts.github.io/main/content/posts/asdasd_61_1.png" alt="png"></p>
 <h1 id="4-genre">4. Genre</h1>
 <ul>
 <li>Which genre of data story did you use?</li>
