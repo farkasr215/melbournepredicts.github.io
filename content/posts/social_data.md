@@ -188,7 +188,7 @@ We believe that if a dataset existed on the number of cars and for example traff
 
 # Link to explainer notebook
 
-https://github.com/farkasr215/melbournepredicts.github.io/blob/main/content/posts/Final_Project.ipynb<br>
+https://drive.google.com/drive/folders/1-vEmbCe4HrU-lVz1z5cLhZvyuRjguMcs?usp=sharing<br>
 
 # References
 
